@@ -440,16 +440,19 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
+              window.location.href = "/news/announcement_2_example/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-three-papers-are-accepted-to-cvpr-2025-one-paper-is-on-state-space-models-one-is-on-foundation-models-for-markush-structures-and-another-one-on-semantic-and-sequential-alignment-for-vision-language-models",
+          title: 'Three papers are accepted to CVPR 2025! One paper is on state space...',
+          description: "",
+          section: "News",},{id: "news-three-papers-are-accepted-to-neurips-2025-one-paper-is-on-state-space-models-one-is-on-foundation-models-for-markush-structures-and-another-one-on-semantic-and-sequential-alignment-for-vision-language-models",
+          title: 'Three papers are accepted to NeurIPS 2025! One paper is on state space...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
