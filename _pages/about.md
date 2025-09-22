@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>ETH Zurich</a>. Gloriastrasse 35, 8092 Zürich
 
