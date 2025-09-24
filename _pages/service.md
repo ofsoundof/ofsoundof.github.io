@@ -21,7 +21,7 @@ nav_order: 5
 - International Joint Conference on Artificial Intelligence (IJCAI), 2021
 
 ## Workshop and Challenge Organization
-
+- The 1st International Workshop on Sustainable and Efficient Language, Vision, and Action Models (SELVA) in conjunction with [ACL 2026](https://2026.aclweb.org/).
 - <a href= "https://cvlai.net/ntire/2025/" target="_blank"> NTIRE 2025: New Trends in Image Restoration and Enhancement Workshop</a>
 - <a href= "https://cvlai.net/ntire/2024/" target="_blank"> NTIRE 2024: New Trends in Image Restoration and Enhancement Workshop</a>
 - <a href= "https://cvlai.net/ntire/2023/" target="_blank"> NTIRE 2023: New Trends in Image Restoration and Enhancement Workshop</a>
