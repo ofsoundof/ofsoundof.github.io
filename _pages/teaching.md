@@ -30,19 +30,30 @@ nav_order: 6
 - 03/21-06/23 Jiezhang Cao, PhD student @ ETH Zürich, with Luc Van Gool
 
 ## Master Student Supversion
-
+- 09/25-now: Marija Zelic @ ETH Zürich
+  - Master thesis: 
+- 09/25-now: Danaé Broustail @ ETH Zürich
+  - Master thesis
+- 09/25-now: Yanlong Chen @ ETH Zürich
+  - Master thesis
+- 07/25-now: Glenn Anta Bucagu, Master student @ UZH
+  - Master thesis
 - 03/25-now: Christos Dimopoulos, Master student @ ETH Zürich
-- 04/25-now: Matteo Fasulo, Master student @ Unibo
-- 02/25-now: Federico Brancasi, Master student @ University of Trento
+  - Master thesis
+- 04/25-10/25: Matteo Fasulo, Master student @ Unibo
+  - Master thesis
+- 02/25-09/25: Federico Brancasi, Master student @ University of Trento
+  - Master thesis
 - 12/24-01/25: Alexandre Elsig, Dominik Senti, Jeffrey Zweidler, and Toth Balint, Master students @ ETH Zürich
+  - Course project
 - 12/24-now: Qingxuan Chen, Master student @ UZH
-- 12/24-now: Ruixiang Chen, Master student @ KTH
+- 12/24-06/25: Ruixiang Chen, Master student @ KTH
 - 11/24-now: Yanlong Chen, Master student @ ETH Zürich
-- 09/24-now: Federica Palmisano, Master student @ ETH Zürich
-- 09/24-now: Berkay Döner, Master student @ EPFL
-- 09/24-now: Nicolas Lehmann, Master student @ ETH Zürich
-- 09/24-now: Altur Pastor Pau, Master student @ ETH Zürich
-- 09/24-now: Yujie Chen, Master student @ RWTH Aachen University
+- 09/24-03/25: Federica Palmisano, Master student @ ETH Zürich
+- 09/24-03/25: Berkay Döner, Master student @ EPFL
+- 09/24-03/25: Nicolas Lehmann, Master student @ ETH Zürich
+- 09/24-03/25: Altur Pastor Pau, Master student @ ETH Zürich
+- 09/24-08/25: Yujie Chen, Master student @ RWTH Aachen University
 - 08/24-now: Yuli Zhou, Master student @ UZH
 - 08/24-now: Tianren Gu, Master student @ ETH Zürich
 - 07/24-01/25: Anna Tegon, Master student @ Politecnico di Milano
