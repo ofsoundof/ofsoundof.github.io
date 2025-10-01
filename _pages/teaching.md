@@ -12,8 +12,8 @@ nav_order: 6
 [//]: # ()
 [//]: # (Organize your courses by years, topics, or universities, however you like!)
 
-[click on this link](#phd-student-supervision)
-## PhD Student Supervision
+
+## [PhD Student Supervision](#phd-student-supervision)
 
 - 05/25-now Anna Tegon, incoming PhD student @ ETH Zürich, with Luca Benini
 - 12/24-now Navaneeth Kunhi Purayil @ ETH Zürich, PhD student, with Luca Benini
@@ -29,9 +29,8 @@ nav_order: 6
 - 04/23-04/24 Leheng Zhang, PhD student @ UESTC, with Shuhang Gu
 - 03/21-06/23 Jiezhang Cao, PhD student @ ETH Zürich, with Luc Van Gool
 
-[click on this link](#master-student-supervision)
-<h2 id="master-student-supervision">My Section Title</h2>
-### [My Section](#my-section)
+## [Master Student Supervision](#master-student-supervision)
+### [Ongoing](#ongoing)
 - 09/25-now: Marija Zelic @ ETH Zürich
   - Master thesis: Foundation models for ECG signals
 - 09/25-now: Danaé Broustail @ ETH Zürich
@@ -50,7 +49,7 @@ nav_order: 6
 - 08/24-now: Tianren Gu, Master student @ ETH Zürich
 - 05/24-now: Hang Guo, Master student @ Tsinghua University
 
-### ### <a href='#master_finished'>Finished </a>
+### [Finished](#finished)
 - 04/25-10/25: Matteo Fasulo, Master student @ Unibo
   - Master thesis: [Foundation models for EMG human-machine interfaces](https://ofsoundof.github.io/assets/pdf/thesis/)
 - 12/24-01/25: Alexandre Elsig, Dominik Senti, Jeffrey Zweidler, and Toth Balint, Master students @ ETH Zürich
@@ -101,7 +100,7 @@ nav_order: 6
 [//]: # (- 02/25-09/25: Federico Brancasi, Master student @ University of Trento)
 [//]: # (  - Master thesis)
 
-## ### <a href='#teaching'>Teaching</a>
+## [Teaching](#teaching)
 - 2023 Fall, 227-0085-11L: Deep Learning for Image Manipulation. Lecturers: Yawei Li, Luc Van Gool.
 - 2020 Fall, 227-0085-11L: Deep Learning for Image Manipulation. Lecturers: Luc Van Gool.
 - 2019 Fall, 263-5902-00L: Computer Vision. Lecturers: Marc Pollefeys, Vittorio Ferrari Luc Van Gool
