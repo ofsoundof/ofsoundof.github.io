@@ -12,8 +12,8 @@ nav_order: 6
 [//]: # ()
 [//]: # (Organize your courses by years, topics, or universities, however you like!)
 
-
-## <a href='#phd'>PhD Student Supervision </a> 
+[click on this link](#phd-student-supervision)
+## PhD Student Supervision
 
 - 05/25-now Anna Tegon, incoming PhD student @ ETH Zürich, with Luca Benini
 - 12/24-now Navaneeth Kunhi Purayil @ ETH Zürich, PhD student, with Luca Benini
@@ -29,8 +29,9 @@ nav_order: 6
 - 04/23-04/24 Leheng Zhang, PhD student @ UESTC, with Shuhang Gu
 - 03/21-06/23 Jiezhang Cao, PhD student @ ETH Zürich, with Luc Van Gool
 
-## <a href='#master'>Master Student Supervision </a>  
-### <a href='#master_ongoing'>Ongoing </a>  
+[click on this link](#master-student-supervision)
+<h2 id="master-student-supervision">My Section Title</h2>
+### [My Section](#my-section)
 - 09/25-now: Marija Zelic @ ETH Zürich
   - Master thesis: Foundation models for ECG signals
 - 09/25-now: Danaé Broustail @ ETH Zürich
