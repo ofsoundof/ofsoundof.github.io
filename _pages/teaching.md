@@ -15,18 +15,16 @@ nav_order: 6
 
 ## [PhD Student Supervision](#phd-student-supervision)
 
-- 05/25-now Anna Tegon, incoming PhD student @ ETH Zürich, with Luca Benini
-- 12/24-now Navaneeth Kunhi Purayil @ ETH Zürich, PhD student, with Luca Benini
+- 05/25-now Anna Tegon, PhD student @ ETH Zürich, with Luca Benini
+- 04/25-08/25 Enrico Vezzali, visiting PhD student @ ETH Zürich, PhD student @ University of Modena and Reggio Emilia, with Prof. Costantino Grana, Prof. Luca Benini, and Prof. Federico Bolelli
 - 12/24-now Cristian Cioflan, PhD student @ ETH Zürich, with Luca Benini
 - 10/24-now Mahdi Abdollahpour, PhD student @ Unibo, with Alessandro Vanelli Coralli and Luca Benini
 - 10/24-now Chi Zhang, PhD student @ ETH Zürich, with Luca Benini
-- 10/24-now Marco Giordano, PhD student @ ETH Zürich, with Michele Magno
 - 09/24-now Giusy Spacone, PhD student @ ETH Zürich, with Luca Benini
 - 03/24-now Morin Lucas, PhD student @ ETH Zürich, with Luc Van Gool
 - 12/23-now Thorir Mar Ingolfsson, PhD student @ ETH Zürich, with Luca Benini
 - 08/23-now Bin Ren, visiting PhD student @ ETH Zürich, with Luc Van Gool, Nicu Sebe, and Rita Cucchiara
 - 04/23-now Pietro Bonazzi, PhD student @ ETH Zürich, with Michele Magno
-- 04/23-04/24 Leheng Zhang, PhD student @ UESTC, with Shuhang Gu
 - 03/21-06/23 Jiezhang Cao, PhD student @ ETH Zürich, with Luc Van Gool
 
 ## [Master Student Supervision](#master-student-supervision)
@@ -51,7 +49,7 @@ nav_order: 6
 
 ### [Finished](#finished)
 - 04/25-10/25: Matteo Fasulo, Master student @ Unibo
-  - Master thesis: [Foundation models for EMG human-machine interfaces](https://ofsoundof.github.io/assets/pdf/thesis/)
+  - Master thesis: [Foundation models for EMG human-machine interfaces](https://ofsoundof.github.io/assets/pdf/thesis/2025_Matteo_EMG.pdf)
 - 12/24-01/25: Alexandre Elsig, Dominik Senti, Jeffrey Zweidler, and Toth Balint, Master students @ ETH Zürich
   - Course project: [Finetuning and quantization of EEG-based foundational biosignal models on ECG and PPG data for blood pressure estimation](https://www.arxiv.org/abs/2502.17460)
 - 12/24-06/25: Ruixiang Chen, Master student @ KTH
@@ -59,6 +57,8 @@ nav_order: 6
 - 11/24-06/25: Yanlong Chen, Master student @ ETH Zürich
   - Semester project 1: [WaveFormer: A lightweight Transformer model for sEMG-based gesture recognition](https://arxiv.org/abs/2506.11168) (NER 2025)
   - Semester project 2: [PhysioWave: A multi-scale wavelet-Transformer for physiological signal representation](https://arxiv.org/abs/2506.10351) (NeurIPS 2025)
+- 10/24-now: Feiyu Pan, Master student @ Shandong University
+  - Project outcome: [Semantic and sequential alignment for referring video object segmentation](https://openaccess.thecvf.com/content/CVPR2025/papers/Pan_Semantic_and_Sequential_Alignment_for_Referring_Video_Object_Segmentation_CVPR_2025_paper.pdf)
 - 09/24-03/25: Federica Palmisano, Master student @ ETH Zürich
   - Master thesis: [Modality-agnostic framework for  biological signal analysis](https://ofsoundof.github.io/assets/pdf/thesis/2024_Federica_ECG.pdf)
 - 09/24-03/25: Berkay Döner, Master student @ EPFL. Now Machine Learning Engineer @ Apple
@@ -87,13 +87,14 @@ nav_order: 6
   - Master thesis: [Ultrasound image Recycling: predicting raw data with simulation-driven deep learning](https://ofsoundof.github.io/assets/pdf/thesis/2023_Maurits_ultrasound.pdf)
 - 09/23-12/23: Sebastian Jäger, Master student @ ETH Zürich
   - Semester project: [Self-supervised EEG representation for motor-imagery brain-computer interfaces](https://ofsoundof.github.io/assets/pdf/thesis/2023_Sebastian_EEG.pdf)
+- 07/21-07/23: Xinchen Gao, Master student @ UESTC
+  - Project outcome: [Learning continuous piecewise non-linear activation functions for deep neural networks](https://ieeexplore.ieee.org/document/10219752)
 - 11/20-10/21: Huseyin Ziya Imamoglu, Master student @ ETH Zürich Now Software Engineer @ Google
   - Master thesis: [Neural architecture search for single image super-resolution](https://ofsoundof.github.io/assets/pdf/thesis/2021_Ziya_NAS.pdf)
+- 02/20-11/21: Yunxuan Wei, Master student @ SCUT. 
+  - Project outcome: [Unsupervised real-world image super resolution via domain-distance aware training](https://arxiv.org/abs/2004.01178)
 - 10/19-03/20: Silvio Paganucci, Master student @ ETH Zürich. Now Senior Research Associate @ iHomeLab - Research Center for Building Intelligence
   - Semester project: Efficient ConvNet Architectures
-- 07/22-03/23: Xujie Shen, Master student @ Zhejiang University
-- 07/21-07/23: Xinchen Gao, Master student @ UESTC
-- 02/20-11/21: Yuxuan Wei, Master student @ SCUT
 - 10/20-12/20: Tobias Hächler, Bachelor student @ ETH Zürich
 - 10/20-12/20: Jules Authier, Bachelor student @ ETH Zürich
 

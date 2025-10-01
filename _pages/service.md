@@ -35,26 +35,34 @@ nav_order: 5
 - Jian Ma: From Sound to Sign: Deep Learning  for Audio Style Adaptation and Multimodal Sign Language Analysis @ University of Technology Sydney
 
 ## [Conference Reviewer](#conference-reviewer)
-- Computer Vision and Pattern Recognition (CVPR)
-- International Conference on Computer Vision (ICCV)
+- The IEEC/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+- The IEEE/CVF International Conference on Computer Vision (ICCV)
 - The European Conference on Computer Vision (ECCV)
-- Neural Information Processing Systems (NeurIPS)
 - The International Conference on Learning Representations (ICLR)
+- The Annual Conference on Neural Information Processing Systems (NeurIPS)
 - The International Conference on Machine Learning (ICML)
-- AAAI Conference on Artificial Intelligence (AAAI)
+- The AAAI Conference on Artificial Intelligence (AAAI)
+- SIGGRAPH Asia
+- The ACM International Conference on Multimedia (ACM Multimedia)
+- The IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+- The British Machine Vision Conference (BMVC)
 - The International Joint Conference on Artificial Intelligence (IJCAI)
-- ACM International Conference on Multimedia (ACM MM)
-- Asian Conference on Computer Vision (ACCV)
-- Winter Conference on Applications of Computer Vision (WACV)
+- The Asian Conference on Computer Vision (ACCV)
+- The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
 - Pacific Graphics
 
 ## [Journal Reviewer](#journal-reviewer)
 - IEEE Transactions on Pattern Analysis and Machine Intelligence
 - International Journal of Computer Vision
-- Transactions on Machine Learning Research
 - IEEE Transactions on Image Processing
-- Neural Networks
+- Transactions on Machine Learning Research
+- IEEE Transactions on Neural Networks and Learning Systems
+- Knowledge-Based Systems
 - International Journal of Intelligent Systems
+- Acta Automatica Sinica (自动化学报)
+- Neural Networks
 - Neurocomputing
+- Journal of Signal Processing Systems
 - Journal of Systems Architecture
 - PLOS ONE
+- IEICE Transactions on Information and Systems
