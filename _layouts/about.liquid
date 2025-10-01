@@ -48,6 +48,15 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Talks -->
+    <div style="margin-top: 2.5rem;"></div>
+    {% if page.invited_talks and page.invited_talks.enabled %}
+      <h2>
+        <a href="{{ '/talks/' | relative_url }}" style="color: inherit">Invited Talks</a>
+      </h2>
+      {% include invited_talks.liquid %}
+    {% endif %}
+
     <!-- Latest posts -->
     <div style="margin-top: 2.5rem;"></div>
     {% if page.latest_posts and page.latest_posts.enabled %}
