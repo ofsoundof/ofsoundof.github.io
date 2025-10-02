@@ -32,7 +32,9 @@ nav_order: 5
 - Swiss National Science Foundation (SNSF) Postdoc Mobility
 
 ## [Thesis Reviewer](#thesis-reviewer)
-- Jian Ma: From Sound to Sign: Deep Learning  for Audio Style Adaptation and Multimodal Sign Language Analysis @ University of Technology Sydney
+- University of Technology Sydney
+  - Jian Ma: From Sound to Sign: Deep Learning  for Audio Style Adaptation and Multimodal Sign Language Analysis
+  - Supervisor: Yi Yang
 
 ## [Conference Reviewer](#conference-reviewer)
 - The IEEC/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
