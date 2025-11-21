@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-
 I defended my thesis! Check it [here](https://www.research-collection.ethz.ch/handle/20.500.11850/540498).

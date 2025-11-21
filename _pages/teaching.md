@@ -2,16 +2,14 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: 
+description:
 nav: true
 nav_order: 6
 ---
 
-[//]: # (For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.)
-
-[//]: # ()
-[//]: # (Organize your courses by years, topics, or universities, however you like!)
-
+[//]: # "For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course."
+[//]: #
+[//]: # "Organize your courses by years, topics, or universities, however you like!"
 
 ## [PhD Student Supervision](#phd-student-supervision)
 
@@ -28,7 +26,9 @@ nav_order: 6
 - 03/21-06/23 Jiezhang Cao, PhD student @ ETH Zürich, with Luc Van Gool
 
 ## [Master Student Supervision](#master-student-supervision)
+
 ### [Ongoing](#ongoing)
+
 - 09/25-now: Marija Zelic @ ETH Zürich
   - Master thesis: Foundation models for ECG signals
 - 09/25-now: Danaé Broustail @ ETH Zürich
@@ -48,6 +48,7 @@ nav_order: 6
 - 05/24-now: Hang Guo, Master student @ Tsinghua University
 
 ### [Finished](#finished)
+
 - 04/25-10/25: Matteo Fasulo, Master student @ Unibo
   - Master thesis: [Foundation models for EMG human-machine interfaces](https://ofsoundof.github.io/assets/pdf/thesis/2025_Matteo_EMG.pdf)
 - 12/24-01/25: Alexandre Elsig, Dominik Senti, Jeffrey Zweidler, and Toth Balint, Master students @ ETH Zürich
@@ -60,7 +61,7 @@ nav_order: 6
 - 10/24-now: Feiyu Pan, Master student @ Shandong University
   - Project outcome: [Semantic and sequential alignment for referring video object segmentation](https://openaccess.thecvf.com/content/CVPR2025/papers/Pan_Semantic_and_Sequential_Alignment_for_Referring_Video_Object_Segmentation_CVPR_2025_paper.pdf)
 - 09/24-03/25: Federica Palmisano, Master student @ ETH Zürich
-  - Master thesis: [Modality-agnostic framework for  biological signal analysis](https://ofsoundof.github.io/assets/pdf/thesis/2024_Federica_ECG.pdf)
+  - Master thesis: [Modality-agnostic framework for biological signal analysis](https://ofsoundof.github.io/assets/pdf/thesis/2024_Federica_ECG.pdf)
 - 09/24-03/25: Berkay Döner, Master student @ EPFL. Now Machine Learning Engineer @ Apple
   - Master thesis: [LUNA: Efficient and topology-agnostic foundation model for EEG signal analysis](https://ofsoundof.github.io/assets/pdf/thesis/2024_Berkay_EEG.pdf)
 - 09/24-03/25: Nicolas Lehmann, Master student @ ETH Zürich. Now Software Engineer @ Stadler
@@ -91,17 +92,18 @@ nav_order: 6
   - Project outcome: [Learning continuous piecewise non-linear activation functions for deep neural networks](https://ieeexplore.ieee.org/document/10219752)
 - 11/20-10/21: Huseyin Ziya Imamoglu, Master student @ ETH Zürich Now Software Engineer @ Google
   - Master thesis: [Neural architecture search for single image super-resolution](https://ofsoundof.github.io/assets/pdf/thesis/2021_Ziya_NAS.pdf)
-- 02/20-11/21: Yunxuan Wei, Master student @ SCUT. 
+- 02/20-11/21: Yunxuan Wei, Master student @ SCUT.
   - Project outcome: [Unsupervised real-world image super resolution via domain-distance aware training](https://arxiv.org/abs/2004.01178)
 - 10/19-03/20: Silvio Paganucci, Master student @ ETH Zürich. Now Senior Research Associate @ iHomeLab - Research Center for Building Intelligence
   - Semester project: Efficient ConvNet Architectures
 - 10/20-12/20: Tobias Hächler, Bachelor student @ ETH Zürich
 - 10/20-12/20: Jules Authier, Bachelor student @ ETH Zürich
 
-[//]: # (- 02/25-09/25: Federico Brancasi, Master student @ University of Trento)
-[//]: # (  - Master thesis)
+[//]: # "- 02/25-09/25: Federico Brancasi, Master student @ University of Trento"
+[//]: # "  - Master thesis"
 
 ## [Teaching](#teaching)
+
 - 2023 Fall, 227-0085-11L: Deep Learning for Image Manipulation. Lecturers: Yawei Li, Luc Van Gool.
 - 2020 Fall, 227-0085-11L: Deep Learning for Image Manipulation. Lecturers: Luc Van Gool.
 - 2019 Fall, 263-5902-00L: Computer Vision. Lecturers: Marc Pollefeys, Vittorio Ferrari Luc Van Gool

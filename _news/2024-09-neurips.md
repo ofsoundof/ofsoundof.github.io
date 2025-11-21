@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-
 One paper on Graph Attention in Transformers is accepted to NeurIPS 2024! Check the <a href= "https://arxiv.org/abs/2405.20008" class="text-blue" target="_blank"> paper here.</a>

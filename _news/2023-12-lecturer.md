@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-
 I start as a Lecturer at ETH Zürich!
