@@ -18,3 +18,105 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+[//]: # (@article{wang2025bsr,)
+
+[//]: # (  abbr={WIP},)
+
+[//]: # (  title={Brain Signal Rendering: Inverting 2D EEG Projections into 4D Physics for Data-Efficient Brain Decoding},)
+
+[//]: # (  journal={Work in Progress},)
+
+[//]: # (  author={Wang, Wei and Li, Yifan and Qu, Wanying and Li, Yawei and Liu, Quanying and Fu, Yanwei},)
+
+[//]: # (  year={2025},)
+
+[//]: # (  bibtex_show={true})
+
+[//]: # (})
+
+[//]: # ()
+[//]: # ()
+[//]: # (@article{liu2025robotic,)
+
+[//]: # (  abbr={WIP},)
+
+[//]: # (  title={Robotic Grasping and Placement Controlled by EEG-Based Hybrid Visual and Motor Imagery},)
+
+[//]: # (  journal={Work in Progress},)
+
+[//]: # (  author={Liu, Yichang and Wang, Tianyu and Ye, Ziyi and Li, Yawei and Fu, Yanwei and Jiang, Yu-Gang and Wang, Shouyan},)
+
+[//]: # (  year={2025},)
+
+[//]: # (  bibtex_show={true})
+
+[//]: # (})
+
+[//]: # ()
+[//]: # ()
+[//]: # (@article{che2025amdc,)
+
+[//]: # (  abbr={WIP},)
+
+[//]: # (  title={AMDC: Adaptive Multi-Agent Data Curation for Robust Long-Tail Recognition},)
+
+[//]: # (  journal={Work in Progress},)
+
+[//]: # (  author={Chen, Shenghan and Liu, Yiming and Wang, Yanzhen and Lu, Xiankai and Li, Yawei},)
+
+[//]: # (  year={2025},)
+
+[//]: # (  bibtex_show={true})
+
+[//]: # (})
+
+[//]: # ()
+[//]: # (@article{xu2025msp,)
+
+[//]: # (  abbr={Arxiv},)
+
+[//]: # (  title={Towards Extreme Pruning of LLMs with Plug-and-Play Mixed Sparsity},)
+
+[//]: # (  author={Xu, Chi and Zhang, Gefei and Zhu, Yantong and Benini, Luca and Hu, Guosheng and Li, Yawei and Zhang, Zhihong},)
+
+[//]: # (  journal={arXiv preprint arXiv:2503.11164},)
+
+[//]: # (  year={2025},)
+
+[//]: # (  bibtex_show={true},)
+
+[//]: # (  preview={2025_arxiv_msp.png},)
+
+[//]: # (  pdf={2025_arxiv_msp.pdf},)
+
+[//]: # (  selected={true},)
+
+[//]: # (  doi={10.48550/arXiv.2503.11164})
+
+[//]: # (})
+
+[//]: # ()
+[//]: # (@inproceedings{zhou2025camsam2,)
+
+[//]: # (  abbr={NeurIPS},)
+
+[//]: # (  title={CamSAM2: Segment Anything Accurately in Camouflaged Videos},)
+
+[//]: # (  author={Zhou, Yuli and Sun, Guolei and Li, Yawei and Fu, Yuqian and Benini, Luca and Konukoglu, Ender},)
+
+[//]: # (  booktitle={Advances in Neural Information Processing Systems &#40;NeurIPS&#41;},)
+
+[//]: # (  year={2025},)
+
+[//]: # (  bibtex_show={true},)
+
+[//]: # (  preview={2025_neurips_camsam2.png},)
+
+[//]: # (  pdf={2025_neurips_camsam2.pdf},)
+
+[//]: # (  selected={true},)
+
+[//]: # (doi={10.48550/arXiv.2503.19730})
+
+[//]: # (})
