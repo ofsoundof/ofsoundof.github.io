@@ -34,7 +34,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Lecturer at ETH Z&uuml;rich. I work with
+I'm going to join Nanyang Technological University as a Nanyang Assistant Professor in 2026. Currently, I am a Lecturer at ETH Z&uuml;rich. I work with
 [Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en).
 I also collaborate with
 [Prof. Radu Timofte](https://www.informatik.uni-wuerzburg.de/computervision/),
