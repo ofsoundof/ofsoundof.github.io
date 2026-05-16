@@ -56,17 +56,18 @@ My research covers the topics on the following levels of AI system stack:
 - **Foundation model for biosignals:** Biosignals capture physiological activities of human beings and find wide applications in healthcare, disease monitoring and detection, BCI, HCI, AR/VR, etc. These applications usually involves efficient on-device computation and accurate modelling capacity. This is an area that I'm interested in recently ([PhysioWave](../assets/pdf/2025_neurips_physiowave.pdf), [LUNA](../assets/pdf/2025_neurips_luna.pdf), [WaveFormer](../assets/pdf/2025_ner_waveformer.pdf), [FEMBA](../assets/pdf/2025_embc_femba.pdf), [CEReBrO](../assets/pdf/2025_embc_finetuning.pdf)).
 
 **I will be recruiting several PhD students and postdoctoral researchers at the School of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore. The lab focuses on AI Efficiency, covering both hardware design and software/algorithm research:**
+
 - <span style="color: red;">**IC Design & EDA**</span>: Focusing on open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance, Area) optimization and 3D integration.
 - <span style="color: red;">**Algorithm & Software**</span>: Focusing on efficient AI/ML and robotics algorithms, leveraging model acceleration techniques to improve the training and inference efficiency of LLMs, VLMs, and VLAs.
 
 The positions are expected to start in July/August 2026. Salary and benefits will follow NTU’s standard policies.
 Applicants with strong research backgrounds and a genuine interest in advancing frontier technologies are warmly welcome to apply. Please contact me for more information on the positions. Please check the following links for the details of the open positions:
+
 - [Senior Research Fellow on IC Design and EDA](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Senior-Research-Fellow--IC-Design-and-EDA-_R00023418)
 - [Research Fellow on IC Design and EDA](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Research-Fellow--IC-Design-and-EDA-_R00023413)
 - [Research Associate on IC Design and EDA](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Research-Associate--IC-Design-and-EDA-_R00023410)
 - [Research Fellow on Artificial Intelligence / Machine Learning / Robotics](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Research-Fellow--Artificial-Intelligence---Machine-Learning---Robotics-_R00023423)
 - [Research Associate on Artificial Intelligence / Machine Learning / Robotics](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Research-Associate--Artificial-Intelligence---Machine-Learning---Robotics-_R00023421)
-
 
 <!-- efficient deep learning and artificial intelligence algorithms and systems with applications to vision, language, and biosignals. -->
 <!-- In particular, I am interested in the following topics: -->
