@@ -34,7 +34,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Nanyang Assistant Professor at School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. 
+I am a Nanyang Assistant Professor at School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore.
 Previously, I was a Lecturer at ETH Z&uuml;rich, where I worked with
 [Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en).
 I also collaborated with
