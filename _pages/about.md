@@ -34,9 +34,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm going to join Nanyang Technological University as a Nanyang Assistant Professor in 2026. Currently, I am a Lecturer at ETH Z&uuml;rich. I work with
+I am a Nanyang Assistant Professor at School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. 
+Previously, I was a Lecturer at ETH Z&uuml;rich, where I worked with
 [Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en).
-I also collaborate with
+I also collaborated with
 [Prof. Radu Timofte](https://www.informatik.uni-wuerzburg.de/computervision/),
 [Dr. Michele Magno](https://scholar.google.com/citations?user=ytj7UUcAAAAJ&hl=en&oi=ao),
 and [Prof. Ming-Hsuan Yang](https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en).
