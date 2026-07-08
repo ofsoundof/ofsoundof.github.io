@@ -523,7 +523,7 @@ ninja.data = [{
           section: "News",},{id: "news-two-papers-are-released-on-arxiv-rdkv-proposes-a-rate-distortion-bit-allocation-method-for-kv-cache-compression-in-this-paper-we-differentiate-the-compression-tolerant-components-from-the-sensitive-components-and-propose-a-joint-token-eviction-and-quantization-method-in-beyond-gsd-as-token-we-propose-a-parameter-efficient-fine-tuning-framework-remote-sensing-vlms",
           title: 'Two papers are released on arxiv. RDKV proposes a rate-distortion bit allocation method...',
           description: "",
-          section: "News",},{id: "news-our-paper-s-cerebro-breaking-the-memory-barrier-in-continuous-eeg-monitoring-is-accepted-to-miccai-2026-congrats-glenn-hard-work-paid-off",
+          section: "News",},{id: "news-our-paper-s-cerebro-breaking-the-memory-barrier-in-continuous-eeg-monitoring-is-accepted-to-miccai-2026-congrats-glenn-hard-work-paid-off-another-paper-panluna-an-efficient-and-robust-query-unified-multimodal-model-for-edge-biosignal-intelligence-is-accepted-to-aicas-2026-congrats-marija-both-papers-demonstrate-our-strength-in-developing-efficient-biosignal-foundation-models-for-edge-intelligence",
           title: 'Our paper “S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring” is accepted...',
           description: "",
           section: "News",},{id: "news-our-paper-scalable-attention-for-5g-nr-channel-estimation-is-accepted-to-pimrc-2026-congrats-mahdi-in-this-paper-we-proposes-channel-estimation-attention-chea-a-low-complexity-channel-estimator-for-5g-new-radio-5g-nr-multi-user-multiple-input-multiple-output-mu-mimo",
