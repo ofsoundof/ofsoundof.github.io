@@ -8,7 +8,7 @@ profile:
   align: left
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: <p>50 Nanyang Ave,</p>
+  more_info: <p>50 Nanyang Avenue</p>
     <p>Singapore 639798</p>
 
 #    <p>555 your office number</p>
