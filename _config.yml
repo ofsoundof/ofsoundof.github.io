@@ -10,12 +10,13 @@ contact_note: >
   Old site is <a href="https://yaweili.bitbucket.io/" target="_blank">here</a>.
 #  You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Yawei Li, Nanyang Assistant Professor at NTU Singapore. Research on efficient AI across the full stack:
+  efficient model design, model compression, software-hardware co-design, and biosignal foundation models.
 footer_text:
 #  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Yawei Li, NTU, Nanyang Technological University, efficient AI, model compression, quantization, hardware-software co-design, RISC-V, biosignal foundation models, embodied AI
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: prof_pic.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -64,9 +65,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://ofsoundof.github.io/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -174,12 +175,6 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  - pages/blog.md
-  - pages/books.md
-  - pages/cv.md
-  - pages/dropdown.md
-  - pages/repositories.md
-  - pages/teaching.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -194,7 +189,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
