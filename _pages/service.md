@@ -7,27 +7,30 @@ nav: true
 nav_order: 5
 ---
 
-[//]: # "For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course."
-[//]: #
-[//]: # "Organize your courses by years, topics, or universities, however you like!"
+## [Area Chair](#area-chair)
 
-## [Outstanding Reviewer](#outstanding-reviewer)
-
-- Asian Conference on Computer Vision (ACCV), 2020
+- International Conference on Machine Learning (ICML), 2027
+- International Conference on Learning Representations (ICLR), 2027
 
 ## [Senior Program Committee Member](#senior-program-committee-member)
 
-- AAAI Conference on Artificial Intelligence (AAAI), 2023-2026
+- AAAI Conference on Artificial Intelligence (AAAI), 2023-2027
 - International Joint Conference on Artificial Intelligence (IJCAI), 2021
 
 ## [Workshop and Challenge Organization](#workshop-and-challenge-organization)
 
 - The 1st International Workshop on Sustainable and Efficient Language, Vision, and Action Models (SELVA) in conjunction with [ACL 2026](https://2026.aclweb.org/).
+- NTIRE 2027: New Trends in Image Restoration and Enhancement Workshop, in conjunction with CVPR 2027
+- NTIRE 2026: New Trends in Image Restoration and Enhancement Workshop, in conjunction with CVPR 2026
 - <a href= "https://cvlai.net/ntire/2025/" target="_blank"> NTIRE 2025: New Trends in Image Restoration and Enhancement Workshop</a>
 - <a href= "https://cvlai.net/ntire/2024/" target="_blank"> NTIRE 2024: New Trends in Image Restoration and Enhancement Workshop</a>
 - <a href= "https://cvlai.net/ntire/2023/" target="_blank"> NTIRE 2023: New Trends in Image Restoration and Enhancement Workshop</a>
 - <a href= "https://data.vision.ee.ethz.ch/cvl/ntire22/" target="_blank"> NTIRE 2022: New Trends in Image Restoration and Enhancement Workshop</a>
 - <a href= "https://data.vision.ee.ethz.ch/cvl/aim20/" target="_blank"> AIM 2020: Advances in Image Manipulation Workshop</a>
+
+## [Outstanding Reviewer](#outstanding-reviewer)
+
+- Asian Conference on Computer Vision (ACCV), 2020
 
 ## [Funding Reviewer](#funding-reviewer)
 
@@ -38,10 +41,12 @@ nav_order: 5
 - University of Technology Sydney
   - Jian Ma: From Sound to Sign: Deep Learning for Audio Style Adaptation and Multimodal Sign Language Analysis
   - Supervisor: Yi Yang
+- Lund University
+  - Baichuan Huang: Efficient Inference and Adaptation in Deep Learning: From Edge Systems to Large Language Models
 
 ## [Conference Reviewer](#conference-reviewer)
 
-- The IEEC/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+- The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
 - The IEEE/CVF International Conference on Computer Vision (ICCV)
 - The European Conference on Computer Vision (ECCV)
 - The International Conference on Learning Representations (ICLR)
@@ -50,6 +55,7 @@ nav_order: 5
 - The AAAI Conference on Artificial Intelligence (AAAI)
 - SIGGRAPH Asia
 - The ACM International Conference on Multimedia (ACM Multimedia)
+- The IEEE International Conference on Robotics and Automation (ICRA)
 - The IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
 - The British Machine Vision Conference (BMVC)
 - The International Joint Conference on Artificial Intelligence (IJCAI)
