@@ -4,7 +4,7 @@ title: Talks
 permalink: /talks/
 description:
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 - Aug. 2025: [Invited talk @ IJCAI Workshop](https://practical-dl.github.io/#speakers). Building Efficient and Sustainable AI Models.

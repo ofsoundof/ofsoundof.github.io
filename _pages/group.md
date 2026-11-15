@@ -4,7 +4,7 @@ permalink: /group/
 title: Group
 description: Deep Efficiency Lab, School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 The **Deep Efficiency Lab** at the School of Electrical and Electronic Engineering, NTU Singapore, works on AI efficiency across the full stack, from models and algorithms down to silicon. Interested in joining? See [Join Us](/join/).
