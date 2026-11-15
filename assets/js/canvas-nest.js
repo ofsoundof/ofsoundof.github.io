@@ -9,7 +9,7 @@
   const ALPHA = { light: 0.5, dark: 0.35 };
   const LINK_DIST = 6000; // squared distance below which two points are linked
   const MOUSE_DIST = 20000; // squared distance within which the cursor links and pulls
-  const SPEED = 0.25; // px per frame at 60 Hz
+  const SPEED = 0.35; // px per frame at 60 Hz
   const PULL = 0.03; // fraction of the cursor distance closed per frame
 
   const canvas = document.createElement("canvas");
