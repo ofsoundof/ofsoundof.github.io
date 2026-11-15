@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Democratizing AI for pervasive applications.
+subtitle: <a href='/group/'><b>Deep Efficiency Lab</b></a> &middot; School of EEE, Nanyang Technological University<br><i>Democratizing AI for pervasive applications.</i>
 
 profile:
   align: left
@@ -20,8 +20,8 @@ social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 35 # leave blank to include all the news in the `_news` folder
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+  limit: 7 # leave blank to include all the news in the `_news` folder
 
 invited_talks:
   enabled: false
@@ -34,37 +34,36 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<span style="color: darkred;">**Open positions:** PhD, postdoc, and NTU student projects. [Join us &rarr;](/join/)</span>
+<blockquote class="block-tip" markdown="1">
+**We're hiring!** PhD students (Spring and Fall 2027 intakes), research fellows, research associates, and NTU project students (FYP, URECA, MSc by Dissertation). [See open positions &rarr;](/join/)
+</blockquote>
 
-I am a Nanyang Assistant Professor at School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore.
-Previously, I was a Lecturer at ETH Z&uuml;rich, where I worked with
-[Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en).
+I am a Nanyang Assistant Professor at the School of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore, where I lead the [Deep Efficiency Lab](/group/).
+Previously, I was a Lecturer at ETH Z&uuml;rich, where I worked with [Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en).
+I got my PhD degree from the Computer Vision Lab at ETH Z&uuml;rich, supervised by [Prof. Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
+
+<details markdown="1">
+<summary>More about my background</summary>
+
 I also collaborated with
 [Prof. Radu Timofte](https://www.informatik.uni-wuerzburg.de/computervision/),
 [Dr. Michele Magno](https://scholar.google.com/citations?user=ytj7UUcAAAAJ&hl=en&oi=ao),
 and [Prof. Ming-Hsuan Yang](https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en).
-I got my PhD degree from the Computer Vision Lab supervised by [Prof. Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en). During my PhD, I was mentored by [Babak Ehteshami Bejnordi](https://babakint.github.io/), [Tijmen Blankevoort](https://scholar.google.com/citations?user=OGEyrG8AAAAJ&hl=en), and [Amir Habibian](https://habibian.github.io/) at Qualcomm and Rakesh Ranjan at Meta. After my graduation, I worked as a Postdoc at CVL, and part-time at Meta.
+During my PhD, I was mentored by [Babak Ehteshami Bejnordi](https://babakint.github.io/), [Tijmen Blankevoort](https://scholar.google.com/citations?user=OGEyrG8AAAAJ&hl=en), and [Amir Habibian](https://habibian.github.io/) at Qualcomm and Rakesh Ranjan at Meta. After my graduation, I worked as a Postdoc at CVL, and part-time at Meta.
 
-<!-- My research focuses on AI efficiency, aiming to accelerate computing, reduce memory footprint, and curb power consumption of AI systems. This is a facinating area that drives AI applications, be it on the cloud or on the edge. To solve this problem, we need to delve into the system stack, trying to understand multiple basic units (input modality, model, computation mechanism, mapping, and hardware specs). By joint optimization with multiple techniques or on multiple levels, extreme computational efficiency can be achieved.  -->
+</details>
 
-My research focuses on AI efficiency, aiming to accelerate computation, reduce memory footprint, and mitigate power consumption in AI systems. This is a fascinating area that drives AI applications across both cloud and edge environments. Addressing this challenge requires delving into the system stack to understand its fundamental units, from input modalities, models, computation mechanisms, mappings to hardware specifications. Through joint optimization across techniques and layers, it becomes possible to achieve extreme computational efficiency.
+## Research
 
-My research spans the AI system stack. The common thread is that efficiency is rarely won at a single layer, the largest gains come from evolving the algorithm and the hardware that runs it together.
+My research focuses on AI efficiency: accelerating computation, reducing memory footprint, and mitigating power consumption in AI systems, across both cloud and edge environments.
+Efficiency is rarely won at a single layer; the largest gains come from evolving the algorithm and the hardware that runs it together.
 
-- **Computationally efficient model design:** what is the right computational mechanism for a given architecture? I have studied this for [CNNs](../assets/pdf/2019_iccv_sgn.pdf), [graph neural networks](../assets/pdf/2021_iccv_efficient_gcn.pdf), vision Transformers ([LocalViT](../assets/pdf/2023_iros_localvit.pdf), [GRL](../assets/pdf/2023_cvpr_grl.pdf), [SemanIR](../assets/pdf/2024_neurips_semanir.pdf), [VRT](../assets/pdf/2024_tip_vrt.pdf)), and state-space models ([MambaIR](../assets/pdf/2025_cvpr_mambairv2.pdf), [FEMBA](../assets/pdf/2025_embc_femba.pdf)).
-- **Model compression and deployment:** how much of a trained model is actually needed? My work spans weight pruning ([group sparsity](../assets/pdf/2020_cvpr_group_sparsity.pdf), [random pruning](../assets/pdf/2022_cvpr_random_pruning.pdf), [DHP](../assets/pdf/2020_eccv_dhp.pdf)), token pruning ([FastVAR](../assets/pdf/2025_iccv_fastvar.pdf)), quantization ([SliM-LLM](../assets/pdf/2025_icml_slim-llm.pdf), [OBR](../assets/pdf/2026_iclr_obr.pdf)), tensor decomposition ([learning filter basis](../assets/pdf/2019_iccv_filter_basis.pdf)), and low-rank adaptation ([IntLoRA](../assets/pdf/2025_icml_intlora.pdf)), applied to LLMs and diffusion models.
-- **Software–hardware co-design:** once the model is fixed, the bottleneck moves to how it is mapped onto silicon. I work on serving modern models efficiently both on large clusters ([FlatAttention](../assets/pdf/2025_isvlsi_flatattention.pdf)) and on severely constrained edge devices ([smart glasses](../assets/pdf/2024_eccv_smart_glasses.pdf), [Retina](../assets/pdf/2024_cvpr_retina.pdf), [TinyTracker](../assets/pdf/2023_sensors_TinyTracker.pdf)).
+{% include research_stack.liquid %}
+
+- <span id="research-models"></span>**Computationally efficient model design:** what is the right computational mechanism for a given architecture? I have studied this for [CNNs](../assets/pdf/2019_iccv_sgn.pdf), [graph neural networks](../assets/pdf/2021_iccv_efficient_gcn.pdf), vision Transformers ([LocalViT](../assets/pdf/2023_iros_localvit.pdf), [GRL](../assets/pdf/2023_cvpr_grl.pdf), [SemanIR](../assets/pdf/2024_neurips_semanir.pdf), [VRT](../assets/pdf/2024_tip_vrt.pdf)), and state-space models ([MambaIR](../assets/pdf/2025_cvpr_mambairv2.pdf), [FEMBA](../assets/pdf/2025_embc_femba.pdf)).
+- <span id="research-compression"></span>**Model compression and deployment:** how much of a trained model is actually needed? My work spans weight pruning ([group sparsity](../assets/pdf/2020_cvpr_group_sparsity.pdf), [random pruning](../assets/pdf/2022_cvpr_random_pruning.pdf), [DHP](../assets/pdf/2020_eccv_dhp.pdf)), token pruning ([FastVAR](../assets/pdf/2025_iccv_fastvar.pdf)), quantization ([SliM-LLM](../assets/pdf/2025_icml_slim-llm.pdf), [OBR](../assets/pdf/2026_iclr_obr.pdf)), tensor decomposition ([learning filter basis](../assets/pdf/2019_iccv_filter_basis.pdf)), and low-rank adaptation ([IntLoRA](../assets/pdf/2025_icml_intlora.pdf)), applied to LLMs and diffusion models.
+- <span id="research-codesign"></span>**Software–hardware co-design:** once the model is fixed, the bottleneck moves to how it is mapped onto silicon. I work on serving modern models efficiently both on large clusters ([FlatAttention](../assets/pdf/2025_isvlsi_flatattention.pdf)) and on severely constrained edge devices ([smart glasses](../assets/pdf/2024_eccv_smart_glasses.pdf), [Retina](../assets/pdf/2024_cvpr_retina.pdf), [TinyTracker](../assets/pdf/2023_sensors_TinyTracker.pdf)).
   <!-- - **Software–hardware co-design for robotics:** vision-language-action (VLA) models and world models are the most demanding embodied workloads we have. A VLA forward pass takes tens to hundreds of milliseconds, while whole-body control needs commands at kilohertz. This is a gap of two to three orders of magnitude that no single layer of the stack can close. How this problem  -->
   <!-- I am building a programme that attacks it jointly: memory-centric models that adapt online, compression and kernel-level optimization shaped around reasoning workloads, and RISC-V architectures with 3D heterogeneous integration designed around the resulting dataflow. -->
+- <span id="research-hardware"></span>**Hardware architecture and EDA:** open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance, Area) optimization and 3D integration. This is the newest direction in the lab, growing out of my work at ETH Z&uuml;rich with Prof. Luca Benini's group.
 - **Foundation models for biosignals:** biosignals record physiological activity and underpin healthcare, disease monitoring, BCI, HCI and AR/VR. They demand accurate modelling under a tight on-device compute budget — here efficiency is not an optimization but a precondition. This is my most active recent direction ([PhysioWave](../assets/pdf/2025_neurips_physiowave.pdf), [LUNA](../assets/pdf/2025_neurips_luna.pdf), [WaveFormer](../assets/pdf/2025_ner_waveformer.pdf), [FEMBA](../assets/pdf/2025_embc_femba.pdf), [CEReBrO](../assets/pdf/2025_embc_finetuning.pdf)).
-
-**I am recruiting PhD students (Spring and Fall 2027 intakes), research fellows, research associates, and NTU project students (FYP, URECA, MSc by Dissertation).** The lab works on AI efficiency across the full stack: embodied AI systems, IC design and EDA, efficient algorithms, and biosignal foundation models. <span style="color: darkred;">**See [Join Us](/join/) for details and how to apply.**</span>
-
-<!-- efficient deep learning and artificial intelligence algorithms and systems with applications to vision, language, and biosignals. -->
-<!-- In particular, I am interested in the following topics: -->
-
-[//]: # "Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder."
-[//]: #
-[//]: # "Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically."
-[//]: #
-[//]: # "Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them."

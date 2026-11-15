@@ -1,6 +1,98 @@
-# Venue badge links/colors for publications, keyed by the bib `abbr` field. Example:
-# "CVPR":
-#   url: https://cvpr.thecvf.com/
-#   color: "#00369f"
-# (delete the {} below when adding entries)
-{}
+# Venue badge colors for publications, keyed by the bib `abbr` field.
+# Grouped by research field; all colors meet WCAG AA contrast with white text.
+
+# Machine learning and AI
+"NeurIPS":
+  color: "#6d3fc0"
+"NeurIPSW":
+  color: "#6d3fc0"
+"ICML":
+  color: "#6d3fc0"
+"ICLR":
+  color: "#6d3fc0"
+"TMLR":
+  color: "#6d3fc0"
+"ECAI":
+  color: "#6d3fc0"
+"ESWA":
+  color: "#6d3fc0"
+
+# Computer vision and image processing
+"CVPR":
+  color: "#0b5cad"
+"ICCV":
+  color: "#0b5cad"
+"ECCV":
+  color: "#0b5cad"
+"ACCV":
+  color: "#0b5cad"
+"TPAMI":
+  color: "#0b5cad"
+"IJCV":
+  color: "#0b5cad"
+"TIP":
+  color: "#0b5cad"
+"CVIU":
+  color: "#0b5cad"
+"MIR":
+  color: "#0b5cad"
+"Visual Intelligence":
+  color: "#0b5cad"
+"ICIP":
+  color: "#0b5cad"
+"VCIP":
+  color: "#0b5cad"
+"ICPR":
+  color: "#0b5cad"
+"ACM MM":
+  color: "#0b5cad"
+"ICME":
+  color: "#0b5cad"
+
+# Hardware and systems
+"ISVLSI":
+  color: "#b14c00"
+"AICAS":
+  color: "#b14c00"
+"CASES":
+  color: "#b14c00"
+"EuroSys":
+  color: "#b14c00"
+"IEEE Sensors":
+  color: "#b14c00"
+
+# Biomedical and neural engineering
+"TBME":
+  color: "#1a7a3a"
+"EMBC":
+  color: "#1a7a3a"
+"NER":
+  color: "#1a7a3a"
+"MICCAI":
+  color: "#1a7a3a"
+"iScience":
+  color: "#1a7a3a"
+"IEEE EMBS":
+  color: "#1a7a3a"
+
+# Robotics
+"IROS":
+  color: "#a8326e"
+"ICRA":
+  color: "#a8326e"
+
+# Signal processing and communications
+"PIMRC":
+  color: "#0b6e7a"
+"GLOBECOM":
+  color: "#0b6e7a"
+"EUSIPCO":
+  color: "#0b6e7a"
+"Electronics Letters":
+  color: "#0b6e7a"
+
+# Preprints and patents
+"Arxiv":
+  color: "#5c6670"
+"Patent":
+  color: "#5c6670"

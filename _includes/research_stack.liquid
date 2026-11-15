@@ -1,0 +1,163 @@
+<style>
+  .research-stack {
+    --rs-accent: var(--global-theme-color);
+    margin: 1.5rem 0 1.75rem;
+    font-size: 0.95rem;
+  }
+  .research-stack .rs-apps {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.6rem 2.6rem;
+  }
+  .research-stack .rs-caption {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-right: 0.25rem;
+  }
+  .research-stack .rs-chip {
+    padding: 0.15rem 0.65rem;
+    border: 1px solid var(--rs-accent);
+    border-radius: 999px;
+    color: var(--rs-accent);
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .research-stack .rs-body {
+    display: flex;
+    gap: 0.6rem;
+  }
+  .research-stack .rs-axis {
+    position: relative;
+    flex: 0 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .research-stack .rs-axis::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 50%;
+    border-left: 2px solid var(--rs-accent);
+  }
+  .research-stack .rs-axis::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 5px);
+    border: 6px solid transparent;
+    border-bottom-color: var(--rs-accent);
+    border-top: 0;
+  }
+  .research-stack .rs-axis span {
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background: var(--global-bg-color);
+    padding: 0.4rem 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--rs-accent);
+  }
+  .research-stack .rs-axis .rs-arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 5px);
+    border: 6px solid transparent;
+    border-top-color: var(--rs-accent);
+    border-bottom: 0;
+  }
+  .research-stack .rs-layers {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  .research-stack .rs-layer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.15rem 0.75rem;
+    padding: 0.55rem 0.9rem;
+    border-left: 4px solid var(--rs-accent);
+    border-radius: 0.35rem;
+    background: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    text-decoration: none;
+    transition: transform 0.15s ease;
+  }
+  @supports (background: color-mix(in srgb, red 50%, white)) {
+    .research-stack .rs-layer {
+      background: color-mix(in srgb, var(--rs-accent) var(--rs-tint), var(--global-bg-color));
+    }
+  }
+  .research-stack .rs-layer:hover {
+    transform: translateX(3px);
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+  .research-stack .rs-layer strong {
+    flex: 0 0 11.5rem;
+    color: var(--rs-accent);
+  }
+  .research-stack .rs-layer span {
+    flex: 1 1 14rem;
+    color: var(--global-text-color);
+    font-size: 0.88rem;
+  }
+  @media (max-width: 576px) {
+    .research-stack .rs-apps {
+      margin-left: 0;
+    }
+    .research-stack .rs-layer strong {
+      flex-basis: 100%;
+    }
+  }
+</style>
+
+<div
+  class="research-stack"
+  role="figure"
+  aria-label="Research across the AI system stack, from applications through models, compression, and co-design down to hardware"
+>
+  <div class="rs-apps">
+    <span class="rs-caption">Applications</span>
+    <span class="rs-chip">Vision</span>
+    <span class="rs-chip">Language</span>
+    <span class="rs-chip">Embodied AI</span>
+    <span class="rs-chip">Biosignals</span>
+  </div>
+  <div class="rs-body">
+    <div class="rs-axis" aria-hidden="true">
+      <span>Co-design</span>
+      <i class="rs-arrow-down"></i>
+    </div>
+    <div class="rs-layers">
+      <a class="rs-layer" style="--rs-tint: 7%" href="#research-models">
+        <strong>Efficient models</strong>
+        <span>Vision Transformers, state-space models, foundation models</span>
+      </a>
+      <a class="rs-layer" style="--rs-tint: 11%" href="#research-compression">
+        <strong>Compression</strong>
+        <span>Pruning, quantization, low-rank adaptation, token pruning</span>
+      </a>
+      <a class="rs-layer" style="--rs-tint: 15%" href="#research-codesign">
+        <strong>Mapping &amp; co-design</strong>
+        <span>Dataflow, kernels, and scheduling from clusters to the edge</span>
+      </a>
+      <a class="rs-layer" style="--rs-tint: 19%" href="#research-hardware">
+        <strong>Hardware &amp; EDA</strong>
+        <span>RISC-V processors, AI accelerators, PPA optimization, 3D integration</span>
+      </a>
+    </div>
+  </div>
+</div>
