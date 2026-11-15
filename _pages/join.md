@@ -7,20 +7,32 @@ nav: true
 nav_order: 7
 ---
 
-**I am recruiting PhD students, postdoctoral researchers, and NTU project students (FYP, URECA, MSc by Dissertation) at the School of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore.** The lab works on AI efficiency across the full stack, from algorithms down to silicon. The first direction cuts across the other three:
+{% include join_hero.liquid %}
 
-- <span style="color: red;">**Embodied AI Systems**</span>: software–hardware co-design for robotics — VLAs, world models, and the memory, compression and architecture work needed to run them within real latency and power budgets. People on this direction work across the algorithm–hardware boundary rather than on one side of it.
-- <span style="color: red;">**IC Design & EDA**</span>: open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance, Area) optimization and 3D integration. This is the newest direction in the lab and the one I am building most actively, growing out of my work at ETH Z&uuml;rich with Prof. Luca Benini's group.
-- <span style="color: red;">**Algorithm & Software**</span>: efficient AI/ML and robotics algorithms, leveraging model acceleration techniques to improve the training and inference efficiency of LLMs, VLMs, and VLAs.
-- <span style="color: red;">**Biosignal Foundation Models**</span>: accurate and efficient models for EEG, EMG and related physiological signals, and their deployment on wearable devices.
+The Deep Efficiency Lab at the School of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore, works on AI efficiency across the full stack, from algorithms down to silicon. We are recruiting at all levels.
 
-**PhD students:** I am recruiting for the Spring 2027 and Fall 2027 intakes. Admission follows NTU’s standard intake cycle, so please check the application deadline for the intake you are targeting.
+## Open positions
 
-**Research fellows and research associates:** these positions are filled on a rolling basis and can start at any time.
+{% include join_cards.liquid section="positions" %}
 
-**NTU students:** I supervise Final Year Projects, URECA projects, and MSc by Dissertation on a rolling basis. Prior research experience is not expected. Please get in touch a semester before project selection opens.
+## Why join: AI is moving down the stack
 
-Salary and benefits follow NTU’s standard policies. Applicants with strong research backgrounds and a genuine interest in advancing frontier technologies are warmly welcome to apply. <span style="color: darkred;">**Please submit your application via <a href="https://statuesque-panda-925.notion.site/3c1756d4d37b4ada9681e1c62c37ebd7?pvs=105" style="color: darkred; text-decoration: underline;">THIS LINK</a>**</span>
+{% include join_ai_stack.liquid %}
+
+## Research directions
+
+The first direction cuts across the other three:
+
+- **Embodied AI Systems:** software–hardware co-design for robotics — VLAs, world models, and the memory, compression and architecture work needed to run them within real latency and power budgets. People on this direction work across the algorithm–hardware boundary rather than on one side of it.
+- **IC Design & EDA:** open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance, Area) optimization and 3D integration. This is the newest direction in the lab and the one I am building most actively, growing out of my work at ETH Z&uuml;rich with Prof. Luca Benini's group.
+- **Algorithm & Software:** efficient AI/ML and robotics algorithms, leveraging model acceleration techniques to improve the training and inference efficiency of LLMs, VLMs, and VLAs.
+- **Biosignal Foundation Models:** accurate and efficient models for EEG, EMG and related physiological signals, and their deployment on wearable devices.
+
+## How to join
+
+{% include join_cards.liquid section="howto" %}
+
+Salary and benefits follow NTU&rsquo;s standard policies. Applicants with strong research backgrounds and a genuine interest in advancing frontier technologies are warmly welcome to apply.
 
 <!-- - [Senior Research Fellow on IC Design and EDA](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Senior-Research-Fellow--IC-Design-and-EDA-_R00023418)
 - [Research Fellow on IC Design and EDA](https://ntu.wd3.myworkdayjobs.com/Careers/job/NTU-Main-Campus-Singapore/Research-Fellow--IC-Design-and-EDA-_R00023413)

@@ -2,14 +2,20 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='/group/'><b>Deep Efficiency Lab</b></a> &middot; School of EEE, Nanyang Technological University<br><i>Democratizing AI for pervasive applications.</i>
+subtitle: <i>Democratizing AI for pervasive applications.</i>
 
 profile:
   align: left
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: <p>50 Nanyang Avenue</p>
+  more_info: >
+    <p>50 Nanyang Avenue</p>
     <p>Singapore 639798</p>
+    <div class="research-motto">
+    <p>&ndash; Think big, aim high;</p>
+    <p>&ndash; Start small, stay patient;</p>
+    <p>&ndash; Never stop, never rush</p>
+    </div>
 
 #    <p>555 your office number</p>
 #    <p>123 your address street</p>
@@ -34,12 +40,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<blockquote class="block-tip" markdown="1">
-**We're hiring!** PhD students (Spring and Fall 2027 intakes), research fellows, research associates, and NTU project students (FYP, URECA, MSc by Dissertation). [See open positions &rarr;](/join/)
-</blockquote>
+{% include research_motto.liquid %}
 
 I am a Nanyang Assistant Professor at the School of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore, where I lead the [Deep Efficiency Lab](/group/).
-Previously, I was a Lecturer at ETH Z&uuml;rich, where I worked with [Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en).
+Previously, I was a Lecturer and Established Researcher at Integrated Systems Laboratory, ETH Z&uuml;rich, where I worked with [Prof. Luca Benini](https://scholar.google.com/citations?user=8riq3sYAAAAJ&hl=en) on AI accelerators and foundation models.
 I got my PhD degree from the Computer Vision Lab at ETH Z&uuml;rich, supervised by [Prof. Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 
 <details markdown="1">
@@ -52,6 +56,10 @@ and [Prof. Ming-Hsuan Yang](https://scholar.google.com/citations?user=p9-ohHsAAA
 During my PhD, I was mentored by [Babak Ehteshami Bejnordi](https://babakint.github.io/), [Tijmen Blankevoort](https://scholar.google.com/citations?user=OGEyrG8AAAAJ&hl=en), and [Amir Habibian](https://habibian.github.io/) at Qualcomm and Rakesh Ranjan at Meta. After my graduation, I worked as a Postdoc at CVL, and part-time at Meta.
 
 </details>
+
+{% include hiring_banner.liquid %}
+
+<div style="clear: both"></div>
 
 ## Research
 
