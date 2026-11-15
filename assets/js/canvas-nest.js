@@ -9,7 +9,8 @@
   const ALPHA = { light: 0.5, dark: 0.35 };
   const LINK_DIST = 6000; // squared distance below which two points are linked
   const MOUSE_DIST = 20000; // squared distance within which the cursor links and pulls
-  const SPEED = 0.5;
+  const SPEED = 0.25; // px per frame at 60 Hz
+  const PULL = 0.03; // fraction of the cursor distance closed per frame
 
   const canvas = document.createElement("canvas");
   canvas.setAttribute("aria-hidden", "true");
@@ -48,50 +49,55 @@
     }
   }
 
-  function draw() {
+  function link(p, q, color, alpha, step) {
+    const dx = p.x - q.x;
+    const dy = p.y - q.y;
+    const d2 = dx * dx + dy * dy;
+    if (d2 >= q.max) return;
+    if (q === mouse && d2 >= q.max / 2) {
+      p.x -= PULL * step * dx; // pull the point toward the cursor
+      p.y -= PULL * step * dy;
+    }
+    const ratio = (q.max - d2) / q.max;
+    ctx.strokeStyle = "rgba(" + color + "," + Math.min(1, (ratio + 0.2) * alpha) + ")";
+    ctx.lineWidth = ratio / 2;
+    ctx.beginPath();
+    ctx.moveTo(p.x, p.y);
+    ctx.lineTo(q.x, q.y);
+    ctx.stroke();
+  }
+
+  let last = 0;
+  function draw(now) {
+    // scale motion by elapsed time so the speed is the same on 60 Hz and 120 Hz displays
+    const step = last ? Math.min((now - last) / 16.67, 3) : 1;
+    last = now;
     const t = theme();
     const color = COLORS[t];
     const alpha = ALPHA[t];
     ctx.clearRect(0, 0, width, height);
-    const all = [mouse].concat(points);
+    ctx.fillStyle = "rgba(" + color + "," + alpha + ")";
     points.forEach((p, i) => {
-      p.x += p.xa;
-      p.y += p.ya;
+      p.x += p.xa * step;
+      p.y += p.ya * step;
       if (p.x > width || p.x < 0) p.xa = -p.xa;
       if (p.y > height || p.y < 0) p.ya = -p.ya;
-      ctx.fillStyle = "rgba(" + color + "," + alpha + ")";
       ctx.fillRect(p.x - 0.5, p.y - 0.5, 1, 1);
-      for (let j = i + 1; j < all.length; j++) {
-        const q = all[j];
-        if (q.x === null) continue;
-        const dx = p.x - q.x;
-        const dy = p.y - q.y;
-        const d2 = dx * dx + dy * dy;
-        if (d2 >= q.max) continue;
-        if (q === mouse && d2 >= q.max / 2) {
-          p.x -= 0.03 * dx; // pull the point toward the cursor
-          p.y -= 0.03 * dy;
-        }
-        const ratio = (q.max - d2) / q.max;
-        ctx.strokeStyle = "rgba(" + color + "," + Math.min(1, (ratio + 0.2) * alpha) + ")";
-        ctx.lineWidth = ratio / 2;
-        ctx.beginPath();
-        ctx.moveTo(p.x, p.y);
-        ctx.lineTo(q.x, q.y);
-        ctx.stroke();
-      }
+      if (mouse.x !== null) link(p, mouse, color, alpha, step);
+      for (let j = i + 1; j < points.length; j++) link(p, points[j], color, alpha, step);
     });
   }
 
   let running = false;
-  function loop() {
+  function loop(now) {
     if (!running) return;
-    draw();
+    draw(now);
     requestAnimationFrame(loop);
   }
   function start() {
     if (running) return;
     running = true;
+    last = 0;
     requestAnimationFrame(loop);
   }
   function stop() {
