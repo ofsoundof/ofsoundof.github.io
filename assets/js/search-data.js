@@ -16,19 +16,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-talks",
-          title: "Talks",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/talks/";
-          },
         },{id: "nav-group",
           title: "Group",
           description: "Deep Efficiency Lab, School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/group/";
+          },
+        },{id: "nav-talks",
+          title: "Talks",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/talks/";
           },
         },{id: "nav-service",
           title: "Service",
