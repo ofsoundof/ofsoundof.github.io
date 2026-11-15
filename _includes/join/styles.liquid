@@ -1,0 +1,425 @@
+{% comment %}
+  Styles for the Join Us page. All classes use the `jn-` prefix so they cannot
+  collide with the icon fonts the theme loads (`fa-`, `ai-`, `ti-`).
+  The theme sets `color` directly on p/div/span/strong/em/li, so text placed on
+  a dark background must have its colour set on the element itself.
+{% endcomment %}
+<style>
+  /* ---- hero ---- */
+  .jn-hero {
+    position: relative;
+    margin: 0 0 1.5rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    background: #1b2470;
+  }
+  .jn-hero img {
+    display: block;
+    width: 100%;
+    height: clamp(180px, 26vw, 260px);
+    object-fit: cover;
+    object-position: 60% 40%;
+  }
+  .jn-hero .jn-cap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.4rem 1.5rem;
+    padding: 2.5rem 1.25rem 0.8rem;
+    background: linear-gradient(to top, rgba(16, 20, 60, 0.9), rgba(16, 20, 60, 0.55) 60%, rgba(16, 20, 60, 0));
+  }
+  .jn-hero .jn-cap p,
+  .jn-hero .jn-cap b,
+  .jn-hero .jn-cap i,
+  .jn-hero .jn-cap span {
+    color: #fff;
+  }
+  .jn-hero .jn-lab {
+    flex: 1 1 20rem;
+    min-width: 0;
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+  .jn-hero .jn-lab b {
+    font-size: 1.3rem;
+  }
+  .jn-hero .jn-lab i {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.92;
+  }
+  .jn-hero .jn-pi {
+    flex: 0 0 auto;
+    margin: 0 0 0 auto;
+    text-align: right;
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+  .jn-hero .jn-pi b {
+    font-size: 1.05rem;
+  }
+  /* ---- card grids (positions, how to join) ---- */
+  .jn-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin: 0.75rem 0 2rem;
+  }
+  .jn-card {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.6rem;
+    background: var(--global-card-bg-color);
+  }
+  .jn-card .jn-head {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .jn-card .jn-dot {
+    flex: 0 0 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--global-theme-color);
+  }
+  .jn-card .jn-num {
+    flex: 0 0 1.6rem;
+    height: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .jn-card .jn-meta {
+    margin: 0 0 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
+  }
+  .jn-card p {
+    margin: 0;
+    font-size: 0.92rem;
+  }
+  .jn-card p + p {
+    margin-top: 0.4rem;
+  }
+  .jn-btn {
+    display: inline-block;
+    margin-top: 0.6rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;
+    background: var(--global-theme-color);
+    color: var(--global-bg-color) !important;
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+  .jn-btn:hover {
+    background: var(--global-hover-color);
+    color: var(--global-hover-text-color) !important;
+  }
+  /* ---- "AI is moving down the stack" ---- */
+  .jn-stack {
+    --l1: #c8102e;
+    --l2: #b0244f;
+    --l3: #6a3d9a;
+    --l4: #1f5aa6;
+    --l5: #1b2470;
+    --fr: #d0103a;
+    margin: 0.75rem 0 2rem;
+  }
+  html[data-theme='dark'] .jn-stack {
+    --l1: #ff6b81;
+    --l2: #f27aa0;
+    --l3: #b79cf0;
+    --l4: #6fa8ff;
+    --l5: #9aa5ff;
+    --fr: #ff5c7a;
+  }
+  .jn-stack .jn-lead {
+    margin: 0 0 1rem;
+    font-size: 1.02rem;
+    color: var(--global-text-color-light);
+  }
+  .jn-stack .jn-colhead {
+    margin: 1.25rem 0 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+  .jn-stack .jn-colhead b {
+    color: var(--fr);
+  }
+  .jn-layers {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .jn-pressure {
+    position: relative;
+    flex: 0 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .jn-pressure::before {
+    content: '';
+    position: absolute;
+    top: 0.25rem;
+    bottom: 0.9rem;
+    left: calc(50% - 3px);
+    width: 6px;
+    border-radius: 3px;
+    background: linear-gradient(var(--l1), var(--l5));
+  }
+  .jn-pressure::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 9px);
+    border: 9px solid transparent;
+    border-top: 12px solid var(--l5);
+    border-bottom: 0;
+  }
+  .jn-pressure span {
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 0.5rem 0;
+    background: var(--global-bg-color);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+  .jn-layer-list {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .jn-layer {
+    --c: var(--l1);
+    display: grid;
+    grid-template-columns: 2.8rem minmax(0, 1fr);
+    gap: 0.15rem 0.9rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--c);
+    border-left-width: 5px;
+    border-radius: 0.4rem;
+    background: var(--global-card-bg-color);
+  }
+  @supports (background: color-mix(in srgb, red 50%, white)) {
+    .jn-layer {
+      background: color-mix(in srgb, var(--c) 7%, var(--global-bg-color));
+    }
+    .jn-card {
+      background: color-mix(in srgb, var(--global-theme-color) 4%, var(--global-bg-color));
+    }
+  }
+  .jn-layer .jn-ico {
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    color: var(--c);
+    font-size: 1.4rem;
+  }
+  .jn-layer .jn-ico small {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--c);
+  }
+  .jn-layer .jn-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem 0.75rem;
+  }
+  .jn-layer .jn-name {
+    margin: 0;
+    font-size: 1.02rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .jn-layer .jn-tag {
+    padding: 0.1rem 0.6rem;
+    border: 1.5px solid var(--c);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--c);
+    white-space: nowrap;
+  }
+  .jn-layer .jn-items {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--c);
+  }
+  .jn-layer .jn-desc {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .jn-layer .jn-desc sup {
+    color: var(--c);
+    font-weight: 700;
+  }
+  .jn-frontier {
+    position: relative;
+    margin: 0.3rem 0;
+    text-align: center;
+  }
+  .jn-frontier::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 2px dashed var(--fr);
+  }
+  .jn-frontier span {
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    border-radius: 999px;
+    background: var(--fr);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .jn-why {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: 0.75rem;
+  }
+  .jn-why div {
+    padding: 0.8rem 0.9rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.5rem;
+    background: var(--global-card-bg-color);
+  }
+  .jn-why h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0 0 0.3rem;
+    font-size: 0.98rem;
+    font-weight: 700;
+  }
+  .jn-why h4 i {
+    flex: 0 0 1.9rem;
+    height: 1.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background: rgba(31, 90, 166, 0.14);
+    color: #1f5aa6;
+    font-size: 0.9rem;
+  }
+  html[data-theme='dark'] .jn-why h4 i {
+    background: rgba(111, 168, 255, 0.18);
+    color: #8fbcff;
+  }
+  .jn-why p {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--global-text-color-light);
+  }
+  .jn-banner {
+    margin-top: 1.25rem;
+    padding: 0.9rem 1.25rem;
+    border-radius: 0.5rem;
+    background: #1b2470;
+  }
+  .jn-banner strong,
+  .jn-banner span {
+    color: #fff;
+  }
+  .jn-banner strong {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+  .jn-banner span {
+    font-size: 0.95rem;
+    opacity: 0.92;
+  }
+  .jn-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+  }
+  .jn-foot em,
+  .jn-foot span {
+    color: var(--global-text-color-light);
+  }
+  /* ---- research directions (markdown list with {: .jn-dirs }) ---- */
+  .jn-dirs ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    gap: 0.9rem;
+    margin: 0.75rem 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+  .jn-dirs li {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 0.5rem;
+    background: var(--global-card-bg-color);
+    font-size: 0.92rem;
+  }
+  .jn-dirs li strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.02rem;
+    color: var(--global-theme-color);
+  }
+  @media (max-width: 576px) {
+    .jn-hero .jn-pi,
+    .jn-hero .jn-lab i,
+    .jn-pressure {
+      display: none;
+    }
+    .jn-hero .jn-lab b {
+      font-size: 1.1rem;
+    }
+    .jn-layer {
+      grid-template-columns: 2.2rem minmax(0, 1fr);
+      padding: 0.6rem 0.7rem;
+    }
+    .jn-layer .jn-ico {
+      font-size: 1.1rem;
+    }
+  }
+</style>

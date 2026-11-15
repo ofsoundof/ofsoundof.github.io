@@ -7,30 +7,35 @@ nav: true
 nav_order: 7
 ---
 
-{% include join_hero.liquid %}
+{% include join/styles.liquid %}
+{% include join/hero.liquid %}
 
 The Deep Efficiency Lab at the School of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore, works on AI efficiency across the full stack, from algorithms down to silicon. We are recruiting at all levels.
 
 ## Open positions
 
-{% include join_cards.liquid section="positions" %}
+{% include join/positions.liquid %}
 
 ## Why join: AI is moving down the stack
 
-{% include join_ai_stack.liquid %}
+{% include join/stack.liquid %}
 
 ## Research directions
 
-The first direction cuts across the other three:
+The first direction cuts across the other three.
 
-- **Embodied AI Systems:** software–hardware co-design for robotics — VLAs, world models, and the memory, compression and architecture work needed to run them within real latency and power budgets. People on this direction work across the algorithm–hardware boundary rather than on one side of it.
-- **IC Design & EDA:** open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance, Area) optimization and 3D integration. This is the newest direction in the lab and the one I am building most actively, growing out of my work at ETH Z&uuml;rich with Prof. Luca Benini's group.
-- **Algorithm & Software:** efficient AI/ML and robotics algorithms, leveraging model acceleration techniques to improve the training and inference efficiency of LLMs, VLMs, and VLAs.
-- **Biosignal Foundation Models:** accurate and efficient models for EEG, EMG and related physiological signals, and their deployment on wearable devices.
+<div class="jn-dirs" markdown="1">
+
+- **Embodied AI Systems** Software–hardware co-design for robotics — VLAs, world models, and the memory, compression and architecture work needed to run them within real latency and power budgets. People on this direction work across the algorithm–hardware boundary rather than on one side of it.
+- **IC Design & EDA** Open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance, Area) optimization and 3D integration. This is the newest direction in the lab and the one I am building most actively, growing out of my work at ETH Z&uuml;rich with Prof. Luca Benini's group.
+- **Algorithm & Software** Efficient AI/ML and robotics algorithms, leveraging model acceleration techniques to improve the training and inference efficiency of LLMs, VLMs, and VLAs.
+- **Biosignal Foundation Models** Accurate and efficient models for EEG, EMG and related physiological signals, and their deployment on wearable devices.
+
+</div>
 
 ## How to join
 
-{% include join_cards.liquid section="howto" %}
+{% include join/howto.liquid %}
 
 Salary and benefits follow NTU&rsquo;s standard policies. Applicants with strong research backgrounds and a genuine interest in advancing frontier technologies are warmly welcome to apply.
 
