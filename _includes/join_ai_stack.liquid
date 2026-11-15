@@ -1,0 +1,359 @@
+<style>
+  .ai-stack {
+    --as-l1: #c8102e;
+    --as-l2: #b0244f;
+    --as-l3: #6a3d9a;
+    --as-l4: #1f5aa6;
+    --as-l5: #1b2470;
+    --as-frontier: #d0103a;
+    --as-banner-bg: #1b2470;
+    --as-banner-text: #ffffff;
+    margin: 1.25rem 0 2rem;
+  }
+  html[data-theme='dark'] .ai-stack {
+    --as-l1: #ff6b81;
+    --as-l2: #f27aa0;
+    --as-l3: #b79cf0;
+    --as-l4: #6fa8ff;
+    --as-l5: #9aa5ff;
+    --as-frontier: #ff5c7a;
+    --as-banner-bg: #263080;
+  }
+  .ai-stack .as-lead {
+    margin: 0 0 1.25rem;
+    font-size: 1.05rem;
+    color: var(--global-text-color-light);
+  }
+  .ai-stack .as-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+  @media (min-width: 900px) {
+    .ai-stack .as-grid {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+  }
+  .ai-stack .as-colhead {
+    margin: 0 0 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+  .ai-stack .as-colhead b {
+    color: var(--as-frontier);
+  }
+  .ai-stack .as-layers-wrap {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .ai-stack .as-pressure {
+    position: relative;
+    flex: 0 0 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ai-stack .as-pressure::before {
+    content: '';
+    position: absolute;
+    top: 0.25rem;
+    bottom: 0.9rem;
+    left: calc(50% - 3px);
+    width: 6px;
+    border-radius: 3px;
+    background: linear-gradient(var(--as-l1), var(--as-l5));
+  }
+  .ai-stack .as-pressure::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 9px);
+    border: 9px solid transparent;
+    border-top: 12px solid var(--as-l5);
+    border-bottom: 0;
+  }
+  .ai-stack .as-pressure span {
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 0.5rem 0;
+    background: var(--global-bg-color);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+  .ai-stack .as-layers {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .ai-stack .as-layer {
+    --c: var(--as-l1);
+    display: grid;
+    grid-template-columns: 2.6rem minmax(0, 1fr);
+    gap: 0.2rem 0.8rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--c);
+    border-left-width: 5px;
+    border-radius: 0.35rem;
+    background: var(--global-card-bg-color);
+  }
+  @supports (background: color-mix(in srgb, red 50%, white)) {
+    .ai-stack .as-layer {
+      background: color-mix(in srgb, var(--c) 7%, var(--global-bg-color));
+    }
+  }
+  .ai-stack .as-icon {
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    color: var(--c);
+    font-size: 1.35rem;
+  }
+  .ai-stack .as-icon small {
+    font-size: 0.65rem;
+    font-weight: 700;
+  }
+  .ai-stack .as-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem 0.75rem;
+  }
+  .ai-stack .as-name {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--global-text-color);
+  }
+  .ai-stack .as-tag {
+    padding: 0.1rem 0.6rem;
+    border: 1.5px solid var(--c);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--c);
+    white-space: nowrap;
+  }
+  .ai-stack .as-items {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--c);
+  }
+  .ai-stack .as-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--global-text-color);
+  }
+  .ai-stack .as-desc sup {
+    color: var(--c);
+    font-weight: 700;
+  }
+  .ai-stack .as-frontier {
+    position: relative;
+    margin: 0.35rem 0;
+    text-align: center;
+  }
+  .ai-stack .as-frontier::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 2px dashed var(--as-frontier);
+  }
+  .ai-stack .as-frontier span {
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    border-radius: 999px;
+    background: var(--as-frontier);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .ai-stack .as-why {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .ai-stack .as-card {
+    padding: 0.8rem 0.95rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.5rem;
+    background: var(--global-card-bg-color);
+  }
+  .ai-stack .as-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 0.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+  }
+  .ai-stack .as-card h4 i {
+    flex: 0 0 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background: color-mix(in srgb, var(--as-l4) 14%, var(--global-bg-color));
+    color: var(--as-l4);
+    font-size: 0.95rem;
+  }
+  .ai-stack .as-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--global-text-color-light);
+  }
+  .ai-stack .as-banner {
+    margin-top: 1.25rem;
+    padding: 0.9rem 1.25rem;
+    border-radius: 0.5rem;
+    background: var(--as-banner-bg);
+    color: var(--as-banner-text);
+  }
+  .ai-stack .as-banner strong {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  .ai-stack .as-banner span {
+    font-size: 0.95rem;
+    opacity: 0.92;
+  }
+  .ai-stack .as-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--global-text-color-light);
+  }
+  .ai-stack .as-foot em {
+    font-style: italic;
+  }
+  @media (max-width: 576px) {
+    .ai-stack .as-pressure {
+      display: none;
+    }
+    .ai-stack .as-layer {
+      grid-template-columns: 2rem minmax(0, 1fr);
+      padding: 0.6rem 0.7rem;
+    }
+    .ai-stack .as-icon {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<div class="ai-stack">
+  <p class="as-lead">Routine coding is increasingly automated. Build the depth to design, optimize, and verify the whole system.</p>
+
+  <div class="as-grid">
+    <div>
+      <p class="as-colhead"><b>AI pressure</b> &nbsp;Five layers to understand</p>
+      <div class="as-layers-wrap">
+        <div class="as-pressure" aria-hidden="true"><span>From software to silicon</span></div>
+        <div class="as-layers">
+          <div class="as-layer" style="--c: var(--as-l1)">
+            <div class="as-icon"><i class="fa-solid fa-code"></i><small>01</small></div>
+            <div class="as-top">
+              <p class="as-name">Software &amp; applications</p>
+              <span class="as-tag">Task automation</span>
+            </div>
+            <p class="as-items">Apps &middot; services &middot; scripts &middot; tests</p>
+            <p class="as-desc">Routine coding faces automation; entry-level roles face pressure.<sup>[1]</sup></p>
+          </div>
+          <div class="as-layer" style="--c: var(--as-l2)">
+            <div class="as-icon"><i class="fa-solid fa-sitemap"></i><small>02</small></div>
+            <div class="as-top">
+              <p class="as-name">Compilers</p>
+              <span class="as-tag">Optimization by AI</span>
+            </div>
+            <p class="as-items">Code generation &middot; optimization passes &middot; auto-tuning</p>
+            <p class="as-desc">AI learns compiler optimizations and tunes generated code.<sup>[2]</sup></p>
+          </div>
+          <div class="as-layer" style="--c: var(--as-l3)">
+            <div class="as-icon"><i class="fa-solid fa-table-cells-large"></i><small>03</small></div>
+            <div class="as-top">
+              <p class="as-name">Kernels &amp; runtime</p>
+              <span class="as-tag">Performance pressure</span>
+            </div>
+            <p class="as-items">CUDA / Triton &middot; parallelism &middot; memory systems</p>
+            <p class="as-desc">AI generates GPU kernels; correctness and speed need testing.<sup>[3]</sup></p>
+          </div>
+          <div class="as-frontier"><span>AI frontier today &mdash; still moving down &darr;</span></div>
+          <div class="as-layer" style="--c: var(--as-l4)">
+            <div class="as-icon"><i class="fa-solid fa-diagram-project"></i><small>04</small></div>
+            <div class="as-top">
+              <p class="as-name">Computer architecture</p>
+              <span class="as-tag">System trade-offs</span>
+            </div>
+            <p class="as-items">Accelerators &middot; dataflows &middot; interconnects &middot; memory hierarchies</p>
+            <p class="as-desc">AI explores architectures; goals and trade-offs guide the search.<sup>[4]</sup></p>
+          </div>
+          <div class="as-layer" style="--c: var(--as-l5)">
+            <div class="as-icon"><i class="fa-solid fa-microchip"></i><small>05</small></div>
+            <div class="as-top">
+              <p class="as-name">Digital IC design</p>
+              <span class="as-tag">Physical constraints</span>
+            </div>
+            <p class="as-items">RTL &middot; verification &middot; synthesis &middot; physical design</p>
+            <p class="as-desc">AI assists RTL and chip layout; verification remains essential.<sup>[5]</sup></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="as-colhead">Why deeper expertise matters</p>
+      <div class="as-why">
+        <div class="as-card">
+          <h4><i class="fa-solid fa-database"></i>Less accessible training data</h4>
+          <p>Hardware data is less abundant; much design knowledge is proprietary.</p>
+        </div>
+        <div class="as-card">
+          <h4><i class="fa-solid fa-microchip"></i>Physical constraints</h4>
+          <p>Timing, power, and area must meet real implementation limits.</p>
+        </div>
+        <div class="as-card">
+          <h4><i class="fa-solid fa-triangle-exclamation"></i>Costly hardware mistakes</h4>
+          <p>Silicon errors can require expensive, time-consuming redesigns.</p>
+        </div>
+        <div class="as-card">
+          <h4><i class="fa-solid fa-circle-nodes"></i>Cross-layer judgment</h4>
+          <p>Connect workloads, algorithms, and hardware to choose the right trade-offs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="as-banner">
+    <strong>Go deeper. Connect the layers. Engineer with AI.</strong>
+    <span>Software &rarr; Compilers &rarr; Kernels &rarr; Architecture &rarr; Digital IC design</span>
+  </div>
+  <div class="as-foot">
+    <em>A learning strategy, not a job-loss forecast. AI is advancing at every layer.</em>
+    <span><b>Sources</b> [1] Stanford 2025 &nbsp;[2] Meta 2024 &nbsp;[3] KernelBench 2025 &nbsp;[4] ArchGym 2023 &nbsp;[5] DeepMind 2021</span>
+  </div>
+</div>

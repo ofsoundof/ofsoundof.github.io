@@ -1,0 +1,25 @@
+{% comment %}
+  Styles for the research motto shown under the profile photo.
+  The motto text itself lives in `profile.more_info` in _pages/about.md.
+{% endcomment %}
+<style>
+  .profile .more-info .research-motto {
+    margin-top: 0.9rem;
+    font-family:
+      Roboto,
+      -apple-system,
+      'Segoe UI',
+      'Helvetica Neue',
+      Arial,
+      sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #b71c1c;
+  }
+  html[data-theme='dark'] .profile .more-info .research-motto {
+    color: #ff7b72;
+  }
+  .profile .more-info .research-motto p {
+    display: block;
+  }
+</style>

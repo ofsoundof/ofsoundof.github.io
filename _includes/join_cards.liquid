@@ -1,0 +1,124 @@
+{% comment %}
+  Card grids for the Join Us page.
+  Usage: {% include join_cards.liquid section="positions" %} or section="howto"
+{% endcomment %}
+{% unless join_cards_styles_loaded %}
+  {% assign join_cards_styles_loaded = true %}
+  <style>
+    .join-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 1rem;
+      margin: 0.75rem 0 2rem;
+    }
+    .join-cards .jc-card {
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 0.6rem;
+      background: var(--global-card-bg-color);
+    }
+    @supports (background: color-mix(in srgb, red 50%, white)) {
+      .join-cards .jc-card {
+        background: color-mix(in srgb, var(--global-theme-color) 4%, var(--global-bg-color));
+      }
+    }
+    .join-cards .jc-head {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--global-text-color);
+    }
+    .join-cards .jc-dot {
+      flex: 0 0 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background: var(--global-theme-color);
+    }
+    .join-cards .jc-num {
+      flex: 0 0 1.6rem;
+      height: 1.6rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--global-theme-color);
+      color: var(--global-bg-color);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .join-cards .jc-meta {
+      margin: 0 0 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--global-theme-color);
+    }
+    .join-cards p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--global-text-color);
+    }
+    .join-cards p + p {
+      margin-top: 0.4rem;
+    }
+    .join-apply {
+      display: inline-block;
+      margin-top: 0.6rem;
+      padding: 0.45rem 1.1rem;
+      border-radius: 999px;
+      background: var(--global-theme-color);
+      color: var(--global-bg-color) !important;
+      font-weight: 600;
+      text-decoration: none !important;
+    }
+    .join-apply:hover {
+      background: var(--global-hover-color);
+      color: var(--global-hover-text-color) !important;
+    }
+  </style>
+{% endunless %}
+
+{% if include.section == 'positions' %}
+  <div class="join-cards">
+    <div class="jc-card">
+      <p class="jc-head"><span class="jc-dot"></span>PhD students</p>
+      <p class="jc-meta">Fall 2027 &middot; Spring 2028 intakes</p>
+      <p>Research scholarships in AI efficiency; background in ML, computer architecture, or IC design.</p>
+      <p>Admission follows NTU&rsquo;s standard intake cycle, so please check the deadline for the intake you are targeting.</p>
+    </div>
+    <div class="jc-card">
+      <p class="jc-head"><span class="jc-dot"></span>Postdocs &amp; research staff</p>
+      <p class="jc-meta">Rolling &middot; start any time</p>
+      <p>Research Fellows and Senior Research Fellows lead a thread across the stack. Research associates and assistants are also welcome.</p>
+    </div>
+    <div class="jc-card">
+      <p class="jc-head"><span class="jc-dot"></span>Students &amp; interns</p>
+      <p class="jc-meta">Rolling &middot; project-based</p>
+      <p>NTU Final Year Projects, URECA, and MSc by Dissertation; undergraduate, master&rsquo;s, and visiting students.</p>
+      <p>Prior research experience is not expected. Please get in touch a semester before project selection opens.</p>
+    </div>
+  </div>
+{% elsif include.section == 'howto' %}
+  <div class="join-cards">
+    <div class="jc-card">
+      <p class="jc-head"><span class="jc-num">1</span>Find your thread</p>
+      <p>
+        Read about our <a href="{{ '/#research-models' | relative_url }}">research</a> and
+        <a href="{{ '/publications/' | relative_url }}">recent papers</a>, and pick the direction that excites you most.
+      </p>
+    </div>
+    <div class="jc-card">
+      <p class="jc-head"><span class="jc-num">2</span>Send a short note</p>
+      <p>Your CV, transcript, and two sentences on what you want to build.</p>
+      <a class="join-apply" href="https://statuesque-panda-925.notion.site/3c1756d4d37b4ada9681e1c62c37ebd7?pvs=105">Apply via the form &rarr;</a>
+    </div>
+    <div class="jc-card">
+      <p class="jc-head"><span class="jc-num">3</span>Talk to us</p>
+      <p>Happy to discuss topics and timelines. Email <a href="mailto:yawei.li@ntu.edu.sg">yawei.li@ntu.edu.sg</a>.</p>
+    </div>
+  </div>
+{% endif %}
