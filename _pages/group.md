@@ -9,6 +9,15 @@ nav_order: 4
 
 The **Deep Efficiency Lab** at the School of Electrical and Electronic Engineering, NTU Singapore, works on AI efficiency across the full stack, from models and algorithms down to silicon. Interested in joining? See [Join Us](/join/).
 
+{% include research_motto.liquid %}
+
+<p class="lab-motto-label">How we work</p>
+<div class="lab-motto">
+<p>&ndash; Think big, aim high;</p>
+<p>&ndash; Start small, stay patient;</p>
+<p>&ndash; Never stop, never rush</p>
+</div>
+
 ## [Core Team](#core-team)
 
 - **Dr. Ali Azarpeyvand**, Research Fellow (since 09/26): digital IC design and computer architecture

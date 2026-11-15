@@ -1,8 +1,15 @@
+{% comment %}
+    Research overview for the homepage: application areas on top, the four stack
+    layers (each with its full description and key papers), and the biosignal
+    application focus below. Edit the research text here.
+    Drafts kept for later:
+    - **Software–hardware co-design for robotics:** vision-language-action (VLA) models and world models are the most demanding embodied workloads we have. A VLA forward pass takes tens to hundreds of milliseconds, while whole-body control needs commands at kilohertz. This is a gap of two to three orders of magnitude that no single layer of the stack can close. How this problem
+  I am building a programme that attacks it jointly: memory-centric models that adapt online, compression and kernel-level optimization shaped around reasoning workloads, and RISC-V architectures with 3D heterogeneous integration designed around the resulting dataflow.
+{% endcomment %}
 <style>
   .research-stack {
     --rs-accent: var(--global-theme-color);
-    margin: 1.5rem 0 1.75rem;
-    font-size: 0.95rem;
+    margin: 1.25rem 0 1.75rem;
   }
   .research-stack .rs-apps {
     display: flex;
@@ -79,56 +86,58 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.5rem;
     min-width: 0;
   }
   .research-stack .rs-layer {
+    padding: 0.7rem 0.95rem 0.8rem;
+    border-left: 4px solid var(--rs-accent);
+    border-radius: 0.35rem;
+    background: var(--global-card-bg-color);
+    scroll-margin-top: 5rem;
+  }
+  @supports (background: color-mix(in srgb, red 50%, white)) {
+    .research-stack .rs-layer {
+      background: color-mix(in srgb, var(--rs-accent) var(--rs-tint, 7%), var(--global-bg-color));
+    }
+  }
+  .research-stack .rs-head {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0.15rem 0.75rem;
-    padding: 0.55rem 0.9rem;
-    border-left: 4px solid var(--rs-accent);
-    border-radius: 0.35rem;
-    background: var(--global-card-bg-color);
-    color: var(--global-text-color);
-    text-decoration: none;
-    transition: transform 0.15s ease;
+    margin-bottom: 0.3rem;
   }
-  @supports (background: color-mix(in srgb, red 50%, white)) {
-    .research-stack .rs-layer {
-      background: color-mix(in srgb, var(--rs-accent) var(--rs-tint), var(--global-bg-color));
-    }
-  }
-  .research-stack .rs-layer:hover {
-    transform: translateX(3px);
-    color: var(--global-text-color);
-    text-decoration: none;
-  }
-  .research-stack .rs-layer strong {
-    flex: 0 0 11.5rem;
+  .research-stack .rs-head strong {
+    font-size: 1.02rem;
     color: var(--rs-accent);
   }
-  .research-stack .rs-layer span {
-    flex: 1 1 14rem;
-    color: var(--global-text-color);
-    font-size: 0.88rem;
+  .research-stack .rs-head span {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+  .research-stack .rs-text {
+    margin: 0;
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+  .research-stack .rs-app {
+    margin: 0.75rem 0 0 2.6rem;
+    --rs-tint: 5%;
+    border-left-style: dashed;
   }
   @media (max-width: 576px) {
-    .research-stack .rs-apps {
+    .research-stack .rs-apps,
+    .research-stack .rs-app {
       margin-left: 0;
     }
-    .research-stack .rs-layer strong {
-      flex-basis: 100%;
+    .research-stack .rs-axis {
+      display: none;
     }
   }
 </style>
 
-<div
-  class="research-stack"
-  role="figure"
-  aria-label="Research across the AI system stack, from applications through models, compression, and co-design down to hardware"
->
+<div class="research-stack" role="figure" aria-label="Research across the AI system stack">
   <div class="rs-apps">
     <span class="rs-caption">Applications</span>
     <span class="rs-chip">Vision</span>
@@ -142,22 +151,63 @@
       <i class="rs-arrow-down"></i>
     </div>
     <div class="rs-layers">
-      <a class="rs-layer" style="--rs-tint: 7%" href="#research-models">
-        <strong>Efficient models</strong>
-        <span>Transformers, state-space models, foundation models</span>
-      </a>
-      <a class="rs-layer" style="--rs-tint: 11%" href="#research-compression">
-        <strong>Compression</strong>
-        <span>Quantization, pruning, low-rank adaptation, token pruning</span>
-      </a>
-      <a class="rs-layer" style="--rs-tint: 15%" href="#research-codesign">
-        <strong>Mapping &amp; co-design</strong>
-        <span>Dataflow, kernels, and scheduling from clusters to the edge</span>
-      </a>
-      <a class="rs-layer" style="--rs-tint: 19%" href="#research-hardware">
-        <strong>Hardware &amp; EDA</strong>
-        <span>RISC-V processors, AI accelerators, PPA optimization, 3D integration</span>
-      </a>
+      <div class="rs-layer" id="research-models" style="--rs-tint: 7%">
+        <div class="rs-head"><strong>Efficient model design</strong><span>Transformers, state-space models, foundation models</span></div>
+        <p class="rs-text">
+          what is the right computational mechanism for a given architecture? I have studied this for
+          <a href="/assets/pdf/2019_iccv_sgn.pdf">CNNs</a>, <a href="/assets/pdf/2021_iccv_efficient_gcn.pdf">graph neural networks</a>, vision
+          Transformers (<a href="/assets/pdf/2023_iros_localvit.pdf">LocalViT</a>, <a href="/assets/pdf/2023_cvpr_grl.pdf">GRL</a>,
+          <a href="/assets/pdf/2024_neurips_semanir.pdf">SemanIR</a>, <a href="/assets/pdf/2024_tip_vrt.pdf">VRT</a>), and state-space models (<a href="/assets/pdf/2025_cvpr_mambairv2.pdf"
+            >MambaIR</a
+          >, <a href="/assets/pdf/2025_embc_femba.pdf">FEMBA</a>).
+        </p>
+      </div>
+      <div class="rs-layer" id="research-compression" style="--rs-tint: 11%">
+        <div class="rs-head">
+          <strong>Model compression &amp; deployment</strong><span>Quantization, pruning, low-rank adaptation, token pruning</span>
+        </div>
+        <p class="rs-text">
+          how much of a trained model is actually needed? My work spans weight pruning (<a href="/assets/pdf/2020_cvpr_group_sparsity.pdf"
+            >group sparsity</a
+          >, <a href="/assets/pdf/2022_cvpr_random_pruning.pdf">random pruning</a>, <a href="/assets/pdf/2020_eccv_dhp.pdf">DHP</a>), token pruning (<a href="/assets/pdf/2025_iccv_fastvar.pdf"
+            >FastVAR</a
+          >), quantization (<a href="/assets/pdf/2025_icml_slim-llm.pdf">SliM-LLM</a>, <a href="/assets/pdf/2026_iclr_obr.pdf">OBR</a>), tensor
+          decomposition (<a href="/assets/pdf/2019_iccv_filter_basis.pdf">learning filter basis</a>), and low-rank adaptation (<a href="/assets/pdf/2025_icml_intlora.pdf"
+            >IntLoRA</a
+          >), applied to LLMs and diffusion models.
+        </p>
+      </div>
+      <div class="rs-layer" id="research-codesign" style="--rs-tint: 15%">
+        <div class="rs-head">
+          <strong>Software&ndash;hardware co-design</strong><span>Dataflow, kernels, and scheduling from clusters to the edge</span>
+        </div>
+        <p class="rs-text">
+          once the model is fixed, the bottleneck moves to how it is mapped onto silicon. I work on serving modern models efficiently both on large
+          clusters (<a href="/assets/pdf/2025_isvlsi_flatattention.pdf">FlatAttention</a>) and on severely constrained edge devices (<a href="/assets/pdf/2024_eccv_smart_glasses.pdf"
+            >smart glasses</a
+          >, <a href="/assets/pdf/2024_cvpr_retina.pdf">Retina</a>, <a href="/assets/pdf/2023_sensors_TinyTracker.pdf">TinyTracker</a>).
+        </p>
+      </div>
+      <div class="rs-layer" id="research-hardware" style="--rs-tint: 19%">
+        <div class="rs-head">
+          <strong>Hardware architecture &amp; EDA</strong><span>RISC-V processors, AI accelerators, PPA optimization, 3D integration</span>
+        </div>
+        <p class="rs-text">
+          open-source processor and AI accelerator architectures based on RISC-V, as well as EDA methodologies for hardware PPA (Power, Performance,
+          Area) optimization and 3D integration. This is the newest direction in the lab, growing out of my work at ETH Z&uuml;rich with Prof. Luca
+          Benini's group.
+        </p>
+      </div>
     </div>
+  </div>
+  <div class="rs-layer rs-app" id="research-biosignals">
+    <div class="rs-head"><strong>Foundation models for biosignals</strong><span>Application focus &middot; EEG, EMG, ECG, ultrasound</span></div>
+    <p class="rs-text">
+      biosignals record physiological activity and underpin healthcare, disease monitoring, BCI, HCI and AR/VR. They demand accurate modelling under a
+      tight on-device compute budget — here efficiency is not an optimization but a precondition. This is my most active recent direction (<a href="/assets/pdf/2025_neurips_physiowave.pdf"
+        >PhysioWave</a
+      >, <a href="/assets/pdf/2025_neurips_luna.pdf">LUNA</a>, <a href="/assets/pdf/2025_ner_waveformer.pdf">WaveFormer</a>,
+      <a href="/assets/pdf/2025_embc_femba.pdf">FEMBA</a>, <a href="/assets/pdf/2025_embc_finetuning.pdf">CEReBrO</a>).
+    </p>
   </div>
 </div>
